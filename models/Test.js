@@ -6,6 +6,6 @@ const testSchema = new Schema({
   kul: {type: String}
 }, {collection: 'test'});
 
-const User = mongoose.model('Test', testSchema);
+const Test = mongoose.model('Test', testSchema);
 
-module.exports = User;
+module.exports = Test;

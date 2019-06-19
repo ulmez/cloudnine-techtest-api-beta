@@ -7,6 +7,7 @@ const logger = require('morgan');
 const multipart = require('connect-multiparty');
 
 const testsRouter = require('./routes/tests');
+const salongsRouter = require('./routes/salongs');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(cookieParser());
 app.use(multipart());
 
 app.use('/tests', testsRouter);
+app.use('/salongs', salongsRouter);
 
 app.listen(port, () => {
   console.log("listening on port: ", port);
