@@ -15,6 +15,7 @@ yarn
 yarn run dev
 
 ### Såhär ser datan ut som är sparad i min mlab databas:
+```json
 {
     "_id": {
         "$oid": "5d0763d2fb6fc00e79ab1161"
@@ -389,3 +390,4 @@ yarn run dev
         }
     ]
 }
+```
